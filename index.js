@@ -28,7 +28,7 @@ function viewCart() {
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
     } else {
     for(let i = 0; i < cart.length; i++) {
-      var itemNameAtPrice = nameAndPriceArray.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
+      nameAndPriceArray.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
       var lastItem = nameAndPriceArray.pop();
     }
     return `In your cart, you have ${nameAndPriceArray.join(`, `)}, and ${lastItem}.`;

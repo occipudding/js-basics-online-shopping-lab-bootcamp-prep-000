@@ -29,7 +29,8 @@ function viewCart() {
     } else {
     for(let i = 0; i < cart.length; i++) {
       var itemNameAtPrice = nameAndPriceArray.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
-      var lastItem = cart.pop()
+      var lastItem = nameAndPriceArray.pop();
+      return ``;
     }
   }
 }

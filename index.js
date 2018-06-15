@@ -19,7 +19,6 @@ function addToCart(item) {
 
 function viewCart() {
   const itemNameAtPrice = [];
-  itemNameAtPrice.push(`${item} at $${price}`);
   
   if(!cart.length) {
      return `Your shopping cart is empty.`;

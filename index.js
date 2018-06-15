@@ -31,7 +31,7 @@ function viewCart() {
       var itemNameAtPrice = nameAndPriceArray.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
       var lastItem = nameAndPriceArray.pop();
     }
-    return `In your cart, you have ${itemNameAtPrice.join(`, `)`;
+    return `In your cart, you have ${itemNameAtPrice.join(`, `)}, and ${lastItem}`;
   }
 }
 
